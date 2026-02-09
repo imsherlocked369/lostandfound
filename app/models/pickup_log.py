@@ -14,6 +14,7 @@ class PickupLog(Base):
         Integer,
         ForeignKey("claim_requests.id"),
         nullable=False,
+        ondelete="CASCADE",
         unique=True
     )
 
