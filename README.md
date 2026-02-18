@@ -24,15 +24,14 @@ The database stores Users, Found Items, Claim Requests, and Pickup Logs using SQ
 - Python 3.x  
 - FastAPI  
 - SQLAlchemy  
-- SQLite  
+- Postgres  
 - Pydantic
 - alembic  
 
 ---
 
 ## Database
-- Database: SQLite  
-- File: `lostfound.db`  
+- Database: Postgres  
 - Tables are created automatically using SQLAlchemy models.
 
 To create tables and run the app:
