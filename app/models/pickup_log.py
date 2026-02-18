@@ -12,10 +12,9 @@ class PickupLog(Base):
 
     claim_request_id = Column(
         Integer,
-        ForeignKey("claim_requests.id"),
+        ForeignKey("claim_requests.id",  ondelete="CASCADE"),
         nullable=False,
         unique=True,
-        ondelete="CASCADE"
     )
 
     claimant_id = Column(Integer, ForeignKey("users.id"), nullable=False)
