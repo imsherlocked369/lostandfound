@@ -31,8 +31,7 @@ The database stores Users, Found Items, Claim Requests, and Pickup Logs using SQ
 ---
 
 ## Database
-- Database: SQLite  
-- File: `lostfound.db`  
+- Database: Postgres  
 - Tables are created automatically using SQLAlchemy models.
 
 To create tables and run the app:
