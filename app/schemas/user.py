@@ -9,6 +9,10 @@ class UserBase(BaseModel):
     lastName: str
     phone: Optional[str] = None
 
+class UserLogin(BaseModel):
+    username: EmailStr
+    password: str
+
 
 class UserCreate(UserBase):
     password: str
