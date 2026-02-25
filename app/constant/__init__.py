@@ -1,1 +1,1 @@
-from .auth_error import AuthError
+from .error import AuthError

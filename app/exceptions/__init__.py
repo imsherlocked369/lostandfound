@@ -1,1 +1,1 @@
-from .auth_exception import AuthException
+from .auth import AuthException

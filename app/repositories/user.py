@@ -1,6 +1,7 @@
 from sqlalchemy.orm import Session
 from app.models.user import User
 
+
 class UserRepository:
 
     def __init__(self, db: Session):
@@ -16,7 +17,7 @@ class UserRepository:
         return user
 
     def update(self, user: User) -> User:
-        self.db.update(user)
+        self.db.add(user)
         self.db.commit()
         self.db.refresh(user)
         return user
