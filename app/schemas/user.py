@@ -9,9 +9,8 @@ class UserBase(BaseModel):
     lastName: str
     phone: Optional[str] = None
 
-
 class UserLogin(BaseModel):
-    email: EmailStr
+    username: EmailStr
     password: str
 
 
@@ -27,8 +26,3 @@ class UserResponse(UserBase):
 
     class Config:
         from_attributes = True
-
-
-class AuthTokenResponse(BaseModel):
-    access_token: str
-    token_type: str = "bearer"
